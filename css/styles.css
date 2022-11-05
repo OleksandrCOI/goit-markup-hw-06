@@ -894,6 +894,8 @@ border-radius: 4px;
     height: 581px;
     top: 50%;
     left: 50%;
+    padding: 40px;
+
     transform: translate(-50%, -50%) scale(1);transition: transform 250ms linear;
 
     background: #FFFFFF;
@@ -927,10 +929,105 @@ border-radius: 4px;
     pointer-events: none;
 }
 
+.modal-title {
+    /* position: absolute; */
+    width: 448px;
+    height: 23px;
+    left: 576px;
+    top: 261px;
 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-text-color);
+}
+
+.input-wrap {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.modal-form {
+
+}
+
+.modal-input {
+    width: 100%;
+    height: 40px;
+    padding-left: 40px;
+    padding-right: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    outline: transparent;
+    
+}
+
+.modal-input:focus {
+    border-color: var(--accent-background-color);
+}
+
+.modal-input-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.modal-coment {
+    width: 100%;
+    /* width: 448px; */
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    margin-bottom: 10px;
+    padding: 1px 10px;
+
+
+/* position: absolute; */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.01em;
+
+color: rgba(117, 117, 117, 0.5);
+}
+
+
+.modal-input::placeholder {
+font-size: 13x;
+color: cadetblue;
+}
+
+.modal-coment::placeholder {
+
+}
+
+
+/*    ---   ---  пробні  ---  ---    */
 
 .proba {
     transition: 1;
 }
+
+/* валідація кольором */
+
+/* .modal-input:not(:focus):not(placeholder-shown):valid {
+    background-color: green;
+}
+
+.modal-input:not(:focus):not(placeholder-shown):invalid {
+    background-color: red
+} */
+
+
 
 /*  live server   */
